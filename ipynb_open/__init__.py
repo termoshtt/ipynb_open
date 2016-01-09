@@ -59,6 +59,8 @@ def resolve_url(ipynb_path, notebooks=None):
           on the parent directory of .ipynb file.
     """
     ipynb_path = _abspath(ipynb_path)
+    if not op.exists(ipynb_path):
+        raise RuntimeError("Notebook {} is not found.".format(ipynb_path))
     if not notebooks:
         notebooks = gather_notebooks()
     for note in notebooks:
