@@ -39,7 +39,7 @@ def gather_notebooks():
             "port": port,
         })
     if not notes:
-        raise RuntimeError("No IPython Notebook found")
+        raise RuntimeError("No IPython Notebook servers are found")
     return notes
 
 
