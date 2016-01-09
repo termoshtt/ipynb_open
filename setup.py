@@ -4,7 +4,7 @@ from setuptools import setup
 
 setup(
     name="ipynb_open",
-    version="0.1.0",
+    version="0.1.1",
     description="Open ipynb file on an existing server",
     author="Toshiki Teramura",
     author_email="toshiki.teramura+ipynb_open@gmail.com",
