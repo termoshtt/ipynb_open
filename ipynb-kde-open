@@ -1,0 +1,2 @@
+#!/bin/bash
+ipynb-open $1 || kdialog --title "Error in ipynb-kde-open" --sorry "Notebook $1 cannot be opened. Is notebook server started?"

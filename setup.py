@@ -12,5 +12,5 @@ setup(
     keywords="utility",
     url="http://github.com/termoshtt/ipynb_open",
     packages=["ipynb_open"],
-    scripts=["ipynb-open"],
+    scripts=["ipynb-open", "ipynb-kde-open"],
 )
