@@ -24,7 +24,8 @@ def gather_notebooks():
     """
     notes = []
     for p in psutil.process_iter():
-        if not p.name().lower() in ["ipython", "python"]:
+        name = p.name().lower()
+        if not (name.startswith("ipython") or name.startswith("python")):
             continue
         if "notebook" not in p.cmdline():
             continue
@@ -39,7 +40,7 @@ def gather_notebooks():
             "port": port,
         })
     if not notes:
-        raise RuntimeError("No IPython Notebook found")
+        raise RuntimeError("No IPython Notebook servers are found")
     return notes
 
 
