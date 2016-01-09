@@ -5,6 +5,13 @@ ipynb-open
 
 Open .ipynb file on an existing notebook server
 
+Install
+-------
+
+```command
+pip install ipynb_open
+```
+
 Usage
 ------
 
